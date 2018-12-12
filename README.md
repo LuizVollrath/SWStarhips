@@ -19,7 +19,7 @@ dotnet run --SWStarshipsConsole SWStarshipsConsole.csproj
 ```
 
 ### Run by Browser
-Install dependencies with
+Install dependencies in the folder \SWStarhips\FrontEnd\starshipApp with (necessary have the node.js installed)
 ```
 npm install
 ```
