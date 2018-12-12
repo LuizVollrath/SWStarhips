@@ -11,6 +11,9 @@ This project has two ways to execute and see the result.
 1) Executing a .exe that will run and show the result in a console prompt (made in .Net).
 2) Executing a website that will run in your browser (made the backend in .Net and the frontend in Angular).
 
+### Run by Console 
+
+### Run by Browser
 Install dependencies with
 ```
 npm install
