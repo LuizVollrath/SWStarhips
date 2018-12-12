@@ -1,0 +1,17 @@
+<mat-form-field class="example-full-width">
+  <input matInput type="number" placeholder="Distance in MGLT" #inputDistance>
+</mat-form-field>
+<button [disabled]="disabledButton" style="margin-left: 5px;" mat-stroked-button class="btn1" (click)="calculateStops(inputDistance.value);"> Calculate </button>
+
+<ag-grid-angular
+    style="width: 870px; height: 490px"
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [enableSorting]="true"
+    [suppressHorizontalScroll]="true"
+    [ensureDomOrder]="true"
+    [overlayLoadingTemplate]="overlayLoadingTemplate"
+    (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>

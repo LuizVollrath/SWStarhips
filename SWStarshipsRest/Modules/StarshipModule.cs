@@ -19,7 +19,7 @@ namespace SWStarshipsRest.Modules
             Get("starships", r => {
                 try
                 {
-                    var starships = _starshipService.GetAllStarships().Select(s =>
+                    var starships = _starshipService.GetAllStarships().OrderBy(o => o.Name).Select(s =>
                     {
                         return new StarshipDTO(s.Name, s.Consumables, s.MGLT);
                     });
@@ -49,7 +49,7 @@ namespace SWStarshipsRest.Modules
                 {
                     var mgltDistance = 0d;
                     double.TryParse(r.mglt, out mgltDistance);
-                    var starships = _starshipService.GetAllStarships().Select(s =>
+                    var starships = _starshipService.GetAllStarships().OrderBy(o => o.Name).Select(s =>
                     {
                         try
                         {

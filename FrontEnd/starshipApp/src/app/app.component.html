@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<mat-tab-group>
+  <mat-tab label="Star Ships">
+    <app-starships-grid></app-starships-grid>
+  </mat-tab>
+  <mat-tab label="Calculate Number of Stops">
+    <app-starships-calc-mglt></app-starships-calc-mglt>
+  </mat-tab>
+</mat-tab-group>
+
+<router-outlet></router-outlet>

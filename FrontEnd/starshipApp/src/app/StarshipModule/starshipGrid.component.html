@@ -1,0 +1,11 @@
+<ag-grid-angular
+    style="width: 480px; height: 550px"
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [enableSorting]="true"
+    [suppressHorizontalScroll]="true"
+    [overlayLoadingTemplate]="overlayLoadingTemplate"
+    (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>
