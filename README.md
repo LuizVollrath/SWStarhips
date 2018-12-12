@@ -56,3 +56,14 @@ There are unit test for the backend codes.
 They can run at \SWStarships\UnitTestStarship
 
 These unit test cover all the services of the used in the project.
+
+## Coding style
+
+The solution was divided in 6 small projects.
+
+*  StarWarsAPI: This project contain the integration with the SWAPI.
+*  SWStarships: This is the main project. It contain all the bussiness layer, the access in the repositories. It used the ServiceProvider of .NetCore to control the injection dependency.
+*  UnitTestStarship: This project contain the unit test of the solution. It tests mostly the Bussiness Service Layer.
+*  SWStarshipsConsole: This project is the executable to run the console application. It uses the SWStarships services to show the results.
+*  SWStarshipsRest: This project is the Rest Service to use in the Website. It uses the SWStarships services to return the results.
+*  FrontEnd/starshipApp: It is a Simple Angular project. It calls the SWStarshipsRest to obtain the results and show in the website.
