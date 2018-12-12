@@ -1,6 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SWStarships;
 using SWStarships.DataRepository.Entities;
 using SWStarships.Interfaces.Services;
 using System;
@@ -15,8 +14,7 @@ namespace UnitTestStarship
 
         public StarshipServiceTest()
         {
-            _serviceProvider = Startup.CreateDefaultDepedencyInjection();
-
+            _serviceProvider = Startup.CreateTestDepedencyInjection();
             _starshipService = _serviceProvider.GetService<IStarshipService>();
         }
 
@@ -43,7 +41,7 @@ namespace UnitTestStarship
 
             var starship = new Starship("Jedi starfighter", "7 days", 50);
             var totalStops = _starshipService.GetAmountOfStopsRequired(starship, distance);
-            Assert.AreEqual(8, totalStops);
+            Assert.AreEqual(119, totalStops);
 
             starship = new Starship("Y-wing", "1 week", 80);
             totalStops = _starshipService.GetAmountOfStopsRequired(starship, distance);
@@ -51,7 +49,7 @@ namespace UnitTestStarship
 
             starship = new Starship("Sentinel-class landing craft", "1 month", 70);
             totalStops = _starshipService.GetAmountOfStopsRequired(starship, distance);
-            Assert.AreEqual(8, totalStops);
+            Assert.AreEqual(19, totalStops);
 
             starship = new Starship("Millennium Falcon", "2 months", 75);
             totalStops = _starshipService.GetAmountOfStopsRequired(starship, distance);
@@ -59,7 +57,7 @@ namespace UnitTestStarship
 
             starship = new Starship("Death Star", "3 years", 10);
             totalStops = _starshipService.GetAmountOfStopsRequired(starship, distance);
-            Assert.AreEqual(8, totalStops);
+            Assert.AreEqual(3, totalStops);
         }
 
         [TestMethod]
