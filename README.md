@@ -31,3 +31,14 @@ The Server will run at
 ```
 http://localhost:4200/
 ```
+
+Execute the Rest Service
+Open the CMD (execute as Admin) and go to the project folder: \SWStarships\SWStarshipsRest
+Run the command to execute the project
+```
+dotnet run --SWStarshipsRest SWStarshipsRest.csproj
+```
+The Rest Service will run at 
+```
+http://localhost:62300/
+```
