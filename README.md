@@ -42,8 +42,17 @@ The Rest Service will run at
 ```
 http://localhost:62300/
 ```
-Rest Service Running
+*Rest Service Running
+
 ![Screenshot](screenshotRestServer.png)
 
-Front Service Running
+*Front Service Running
+
 ![Screenshot](screenshotFrontServer.png)
+
+## Running the tests
+
+There are unit test for the backend codes.
+They can run at \SWStarships\UnitTestStarship
+
+These unit test cover all the services of the used in the project.
