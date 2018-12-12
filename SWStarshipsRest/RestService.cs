@@ -15,18 +15,12 @@ namespace SWStarshipsRest
 
         private void SetupConfiguration(string host)
         {
-            try
+            HostConfiguration hostConfigs = new HostConfiguration()
             {
-                HostConfiguration hostConfigs = new HostConfiguration()
-                {
-                    UrlReservations = new UrlReservations() { CreateAutomatically = true }
-                };
-                nancyHost = new NancyHost(new Uri(host));
-                Thread.Sleep(2000);
-            }
-            catch (Exception ex)
-            {       
-            }
+                UrlReservations = new UrlReservations() { CreateAutomatically = true }
+            };
+            nancyHost = new NancyHost(new Uri(host));
+            Thread.Sleep(2000);
         }
 
         public void StartServer()
