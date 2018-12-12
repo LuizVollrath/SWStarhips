@@ -12,9 +12,22 @@ This project has two ways to execute and see the result.
 2) Executing a website that will run in your browser (made the backend in .Net and the frontend in Angular).
 
 ### Run by Console 
+Open the CMD and go to the project folder: \SWStarships\SWStarshipsConsole
+Run the command to execute the project
+```
+dotnet run --SWStarshipsConsole SWStarshipsConsole.csproj
+```
 
 ### Run by Browser
 Install dependencies with
 ```
 npm install
+```
+Execute the server with
+```
+npm start
+```
+The Server will run at 
+```
+http://localhost:4200/
 ```
