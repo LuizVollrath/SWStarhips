@@ -42,8 +42,8 @@ The Rest Service will run at
 ```
 http://localhost:62300/
 ```
-* Rest Service Running
+Rest Service Running
 ![Screenshot](screenshotRestServer.png)
 
-* Front Service Running
+Front Service Running
 ![Screenshot](screenshotFrontServer.png)
